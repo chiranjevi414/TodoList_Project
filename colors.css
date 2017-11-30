@@ -1,0 +1,22 @@
+body{
+  background-color: lightgray;
+}
+
+.uMarginLeft40Percent {
+  margin-left: 40%;
+}
+.glyphiconDefaults {
+  padding-right: 5px !important;
+vertical-align: middle !important;
+}
+#task{
+      width: 224px;
+}
+.navbar-brand{
+  font-size: 25px;
+  color: blue !important;
+}
+#completed{
+
+  color:green;
+}

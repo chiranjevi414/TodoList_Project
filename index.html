@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Todo Application</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="colors.css">
+  <script src="todolist.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header" style="margin-left: 40%">
+      <a class="navbar-brand" href="#"><b>ToDo Application</b></a>
+    </div>
+  </div>
+</nav>
+
+<div style='padding:20px'>
+  <div class="addTask">
+    <label for="task"><h4>New Task:</h4> </label>
+    <input type="text" id="task" placeholder="Enter your task" name="task">
+    <button type="button" class="btn btn-primary btn-md">Create</button>
+  </div>
+
+  <h2>Daily Tasks</h2>
+
+  <div class="container" id="beforecomplete"style="margin-left: 5%">
+        <div class="checkbox">
+            <label><input type="checkbox" class="tasksCheckbox" value="Wake Up">Wake Up </label>
+        </div>
+         <div class="checkbox">
+            <label><input type="checkbox" class="tasksCheckbox" value="Have a breakfast">Have a breakfast </label>
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox" class="tasksCheckbox" value="Go to school">Go to school </label>
+        </div>
+        <div class="checkbox">
+           <label><input type="checkbox" class="tasksCheckbox" value="Play Cricket">Play Cricket </label>
+       </div>
+       <div class="checkbox">
+           <label><input type="checkbox" class="tasksCheckbox" value="Go and Sleep">Go and Sleep </label>
+       </div>
+  </div>
+
+  <div class="buttons pull-right" style='width:82%'>
+    <button  class="btn btn-danger" onclick = "deleteItems()"><i class='glyphicon glyphicon-remove glyphiconDefaults'></i>Delete</button>
+    <button  class="btn btn-success" onclick="addItems()"><i class='glyphicon glyphicon-ok glyphiconDefaults'></i>Mark as Done</button>
+  </div>
+  <br><br>
+
+  <h2>Completed List </h2>
+
+  <ul id='completed'>
+
+  </ul>
+
+  </body>
+</div>
+
+
+
+</html>
