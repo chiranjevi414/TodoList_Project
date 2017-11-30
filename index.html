@@ -26,7 +26,7 @@
   <div class="addTask">
     <label for="task"><h4>New Task:</h4> </label>
     <input type="text" id="task" placeholder="Enter your task" name="task">
-    <button type="button" class="btn btn-primary btn-md">Create</button>
+    <button type="button" class="btn btn-primary btn-md" onclick = "addTask()" >Create</button>
   </div>
 
   <h2>Daily Tasks</h2>
@@ -36,7 +36,7 @@
             <label><input type="checkbox" class="tasksCheckbox" value="Wake Up">Wake Up </label>
         </div>
          <div class="checkbox">
-            <label><input type="checkbox" class="tasksCheckbox" value="Have a breakfast">Have a breakfast </label>
+            <label><input type="checkbox" class="tasksCheckbox" value="Have a breakfast" >Have a breakfast </label>
         </div>
         <div class="checkbox">
             <label><input type="checkbox" class="tasksCheckbox" value="Go to school">Go to school </label>
@@ -53,11 +53,11 @@
     <button  class="btn btn-danger" onclick = "deleteItems()"><i class='glyphicon glyphicon-remove glyphiconDefaults'></i>Delete</button>
     <button  class="btn btn-success" onclick="addItems()"><i class='glyphicon glyphicon-ok glyphiconDefaults'></i>Mark as Done</button>
   </div>
-  <br><br>
+
 
   <h2>Completed List </h2>
 
-  <ul id='completed'>
+  <ul id='completed' >
 
   </ul>
 
